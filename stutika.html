@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Story Time - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.figma{position:relative;width:100%;padding-bottom:56.25%}.figma iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:1px solid #eee}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:50%;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;text-decoration:none;padding-left:22px}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em;font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="Story-Time" data-id="Story-Time"><a class="anchor hidden-xs" href="#Story-Time" title="Story-Time"><span class="octicon octicon-link"></span></a><span>Story Time</span></h1><p><span class="toc"><ul>
+<li><a href="#Story-Time" title="Story Time">Story Time</a><ul>
+<li><a href="#Overview" title="Overview">Overview</a></li>
+<li><a href="#Video-demo" title="Video demo">Video demo</a></li>
+<li><a href="#System-block-diagram" title="System block diagram">System block diagram</a></li>
+<li><a href="#State-Diagram" title="State Diagram">State Diagram</a></li>
+<li><a href="#Basic-functionality" title="Basic functionality">Basic functionality</a><ul>
+<li><a href="#Locating-stories" title="Locating stories">Locating stories</a></li>
+<li><a href="#Playing-back-stories" title="Playing back stories">Playing back stories</a></li>
+<li><a href="#Recording-stories" title="Recording stories">Recording stories</a></li>
+</ul>
+</li>
+<li><a href="#Design-challenges" title="Design challenges">Design challenges</a><ul>
+<li><a href="#Storing-large-quantities-of-audio" title="Storing large quantities of audio">Storing large quantities of audio</a></li>
+<li><a href="#Retrieving-and-sending-large-stories" title="Retrieving and sending large stories">Retrieving and sending large stories</a></li>
+<li><a href="#Playing-back-audio" title="Playing back audio">Playing back audio</a></li>
+</ul>
+</li>
+<li><a href="#Design-decisions" title="Design decisions">Design decisions</a><ul>
+<li><a href="#User-interface" title="User interface">User interface</a></li>
+<li><a href="#Scalability" title="Scalability">Scalability</a></li>
+<li><a href="#Database" title="Database">Database</a></li>
+</ul>
+</li>
+<li><a href="#Python-Files" title="Python Files">Python Files</a><ul>
+<li><a href="#audio_handlerpy" title="audio_handler.py:">audio_handler.py:</a></li>
+<li><a href="#location_handlerpy" title="location_handler.py">location_handler.py</a></li>
+<li><a href="#storywebpy" title="storyweb.py">storyweb.py</a></li>
+<li><a href="#bounding_box_campuspy" title="bounding_box_campus.py">bounding_box_campus.py</a></li>
+</ul>
+</li>
+<li><a href="#Arduino-Code" title="Arduino Code">Arduino Code</a><ul>
+<li><a href="#Regularly-getting-titles-at-new-location" title="Regularly getting titles at new location">Regularly getting titles at new location</a></li>
+<li><a href="#Playing-back-a-story" title="Playing back a story">Playing back a story</a></li>
+<li><a href="#Recording-title-and-story" title="Recording title and story">Recording title and story</a></li>
+</ul>
+</li>
+<li><a href="#Thanks" title="Thanks">Thanks</a></li>
+<li><a href="#Milestone-Demonstrations" title="Milestone Demonstrations">Milestone Demonstrations</a><ul>
+<li><a href="#Locations-and-story-retrieval" title="Locations and story retrieval">Locations and story retrieval</a></li>
+<li><a href="#Audio-playback-and-storage" title="Audio playback and storage">Audio playback and storage</a></li>
+<li><a href="#Story-recording" title="Story recording">Story recording</a></li>
+<li><a href="#User-interface1" title="User interface">User interface</a></li>
+<li><a href="#Integration-and-Presentation" title="Integration and Presentation">Integration and Presentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</span></p><h2 id="Overview" data-id="Overview"><a class="anchor hidden-xs" href="#Overview" title="Overview"><span class="octicon octicon-link"></span></a><span>Overview</span></h2><p><span>Story Time lets you create, share, and listen to stories stored in the physical world. A traveller carrying the Story Time system can record a story, leaving it at the location for future travellers to listen to. Any other user can come across this same location, and see the title of the story left! They can then play back the story, listening to the words left by someone else.</span></p><p><span>This project is a way for people to document and share memories without actually being in the same location. Through the physical-world aspect of the project, we encourage users to go outside and experience the world, while hearing stories about others’ relationships to those places. Our website allows people to even hunt out stories, and to keep track of the stories they leave in the world.</span></p><h2 id="Video-demo" data-id="Video-demo"><a class="anchor hidden-xs" href="#Video-demo" title="Video-demo"><span class="octicon octicon-link"></span></a><span>Video demo</span></h2><p><span data-videoid="43VnsjeduMg" class="youtube"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/43VnsjeduMg"></iframe></span><br>
+<span class="youtube" data-videoid="TYv87zmvRuE"><iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://www.youtube.com/embed/TYv87zmvRuE"></iframe></span></p><h2 id="System-block-diagram" data-id="System-block-diagram"><a class="anchor hidden-xs" href="#System-block-diagram" title="System-block-diagram"><span class="octicon octicon-link"></span></a><span>System block diagram</span></h2><p><img src="https://i.imgur.com/3mgWNH1.png" alt=""></p><h2 id="State-Diagram" data-id="State-Diagram"><a class="anchor hidden-xs" href="#State-Diagram" title="State-Diagram"><span class="octicon octicon-link"></span></a><span>State Diagram</span></h2><p><img src="https://i.imgur.com/z0DjPbp.png" alt=""></p><h2 id="Basic-functionality" data-id="Basic-functionality"><a class="anchor hidden-xs" href="#Basic-functionality" title="Basic-functionality"><span class="octicon octicon-link"></span></a><span>Basic functionality</span></h2><h3 id="Locating-stories" data-id="Locating-stories"><a class="anchor hidden-xs" href="#Locating-stories" title="Locating-stories"><span class="octicon octicon-link"></span></a><span>Locating stories</span></h3><p><span>As the user walks around, the ESP32 regularly retrieves their coordinate locations. It then checks if there are any stories that were left nearby. If stories are nearby, all the available titles are displayed on the screen.</span></p><p><span>Prior to heading out into the world to find stories, the user can also visit our website at </span><code>http://608dev-2.net/sandbox/sc/team22/project/storyweb.py</code><span> to see where stories are in the world. There is a map they can explore, in addition to the 10 stories closest to them being displayed. Along with seeing all the stories, they can see and delete the stories they personally recorded.</span></p><h3 id="Playing-back-stories" data-id="Playing-back-stories"><a class="anchor hidden-xs" href="#Playing-back-stories" title="Playing-back-stories"><span class="octicon octicon-link"></span></a><span>Playing back stories</span></h3><p><span>Once titles are displayed, the user can scroll through them, and select the title of the story they want to hear. Once the title is selected, the ESP32 retrieves the full recording of the story with the  selected title from the database. It automatically begins playing back the recording, exactly the same as it was recorded.</span></p><p><span>While the audio is playing, the user can choose to pause, play, and restart the story.</span></p><h3 id="Recording-stories" data-id="Recording-stories"><a class="anchor hidden-xs" href="#Recording-stories" title="Recording-stories"><span class="octicon octicon-link"></span></a><span>Recording stories</span></h3><p><span>At any time, except while playing back a story, the user can choose to record a story. They push the recording button to begin recording a title. They speak the title, and press the button again to indicate they are done speaking. The ESP32 then sends the audio to the Google Speech-to-text API, to get the text of the title.</span></p><p><span>The ESP32 immediately then begins listening for the story. The user can speak for up to three minutes, telling their story. When they finish their story, they press the button again to indicate they are done. The ESP32 then sends this title and story to the database, attached to the last known coordinates (retrieved during story location)</span></p><h2 id="Design-challenges" data-id="Design-challenges"><a class="anchor hidden-xs" href="#Design-challenges" title="Design-challenges"><span class="octicon octicon-link"></span></a><span>Design challenges</span></h2><h3 id="Storing-large-quantities-of-audio" data-id="Storing-large-quantities-of-audio"><a class="anchor hidden-xs" href="#Storing-large-quantities-of-audio" title="Storing-large-quantities-of-audio"><span class="octicon octicon-link"></span></a><span>Storing large quantities of audio</span></h3><p><span>Typical MP3 music files require a few megabytes of storage. We wanted the users to have atleast 2 minutes of good-quality audio. Fortunately, our ESP lets us use 4MB of off-chip Pseudo-Static RAM. Our microphone records at a depth of 12 bits, whereas the speaker plays 8 bit inputs. Therefore, at each recording, the output depth is reduced, and the sample is serialized  into base-64 encoded string. Currently, we have fixed the story sizes to a maximum of 2 minutes 20 seconds. At an 8000 Hz sample rate, a 140 second long audio sample recording generates</span></p><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mn>140</mn><mtext>s</mtext><mo>&amp;#x00D7;</mo><mn>8</mn><mtext>kHz</mtext><mo>&amp;#x00D7;</mo><mn>8</mn><mtext>bits</mtext><mo>&amp;#x00D7;</mo><mn>4</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>/</mo></mrow><mn>3</mn><mo>=</mo><mn>1.2</mn><mtext>Mb</mtext></math>" role="presentation" style="font-size: 119%; text-align: center; position: relative;"><span id="MJXc-Node-75" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-76" class="mjx-mrow"><span id="MJXc-Node-77" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">140</span></span><span id="MJXc-Node-78" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.16em; padding-bottom: 0.37em;">s</span></span><span id="MJXc-Node-79" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.213em; padding-bottom: 0.318em;">×</span></span><span id="MJXc-Node-80" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">8</span></span><span id="MJXc-Node-81" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.423em; padding-bottom: 0.318em;">kHz</span></span><span id="MJXc-Node-82" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.213em; padding-bottom: 0.318em;">×</span></span><span id="MJXc-Node-83" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">8</span></span><span id="MJXc-Node-84" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.423em; padding-bottom: 0.37em;">bits</span></span><span id="MJXc-Node-85" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.213em; padding-bottom: 0.318em;">×</span></span><span id="MJXc-Node-86" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.318em;">4</span></span><span id="MJXc-Node-87" class="mjx-texatom"><span id="MJXc-Node-88" class="mjx-mrow"><span id="MJXc-Node-89" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.475em; padding-bottom: 0.58em;">/</span></span></span></span><span id="MJXc-Node-90" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">3</span></span><span id="MJXc-Node-91" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.055em; padding-bottom: 0.318em;">=</span></span><span id="MJXc-Node-92" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.318em;">1.2</span></span><span id="MJXc-Node-93" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.423em; padding-bottom: 0.37em;">Mb</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>140</mn><mtext>s</mtext><mo>×</mo><mn>8</mn><mtext>kHz</mtext><mo>×</mo><mn>8</mn><mtext>bits</mtext><mo>×</mo><mn>4</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mn>3</mn><mo>=</mo><mn>1.2</mn><mtext>Mb</mtext></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-9">140 \text{s}\times 8\text{kHz} \times8\text{bits}\times 4/3 = 1.2 \text{Mb}</script></span></p><p><span>sized character array that is stored in the ESP and sent to the database. In order to support this length, we reuse PSRAM arrays that record, send, recieve and parse the story response.</span></p><h3 id="Retrieving-and-sending-large-stories" data-id="Retrieving-and-sending-large-stories"><a class="anchor hidden-xs" href="#Retrieving-and-sending-large-stories" title="Retrieving-and-sending-large-stories"><span class="octicon octicon-link"></span></a><span>Retrieving and sending large stories</span></h3><p><span>The </span><code>do_http_request</code><span> function (from lab) requires time quadratic in size to retrieve a response (</span><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-10-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x2248;</mo><mn>80</mn></math>" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-94" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-95" class="mjx-mrow"><span id="MJXc-Node-96" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.213em; padding-bottom: 0.318em;">≈</span></span><span id="MJXc-Node-97" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">80</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≈</mo><mn>80</mn></math></span></span><script type="math/tex" id="MathJax-Element-10">\approx 80</script></span><span> seconds in order to </span><code>GET</code><span> a 2-minute story) because of non-constant helper </span><code>char_append()</code><span> function. We modified this to keep track of currrent response index so that we retrieve our stories within a few seconds.</span></p><h3 id="Playing-back-audio" data-id="Playing-back-audio"><a class="anchor hidden-xs" href="#Playing-back-audio" title="Playing-back-audio"><span class="octicon octicon-link"></span></a><span>Playing back audio</span></h3><p><span>In order to play back audio we needed to decode back from base-64, correctly wire the speaker and amplifier and write to the speaker output. Since a new character is played every </span><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-11-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>/</mo></mrow><mo stretchy=&quot;false&quot;>(</mo><mn>8000</mn><mtext>Hz</mtext><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mn>125</mn><mi>&amp;#x03BC;</mi><mtext>s</mtext></math>" role="presentation" style="font-size: 119%; position: relative;"><span id="MJXc-Node-98" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-99" class="mjx-mrow"><span id="MJXc-Node-100" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.318em;">1</span></span><span id="MJXc-Node-101" class="mjx-texatom"><span id="MJXc-Node-102" class="mjx-mrow"><span id="MJXc-Node-103" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.475em; padding-bottom: 0.58em;">/</span></span></span></span><span id="MJXc-Node-104" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.475em; padding-bottom: 0.58em;">(</span></span><span id="MJXc-Node-105" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">8000</span></span><span id="MJXc-Node-106" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.423em; padding-bottom: 0.318em;">Hz</span></span><span id="MJXc-Node-107" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.475em; padding-bottom: 0.58em;">)</span></span><span id="MJXc-Node-108" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.055em; padding-bottom: 0.318em;">=</span></span><span id="MJXc-Node-109" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.37em; padding-bottom: 0.37em;">125</span></span><span id="MJXc-Node-110" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.213em; padding-bottom: 0.475em;">μ</span></span><span id="MJXc-Node-111" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.16em; padding-bottom: 0.37em;">s</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mo stretchy="false">(</mo><mn>8000</mn><mtext>Hz</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>125</mn><mi>μ</mi><mtext>s</mtext></math></span></span><script type="math/tex" id="MathJax-Element-11">1/(8000\text{Hz})=125\mu\text{s}</script></span><span>, we cannot perform any linear array operations on our large audio string. Therefore the following code (which is the original from our lab)</span></p><pre><code class="`` hljs"><span class="hljs-keyword">while</span> (sample_num &lt; strlen(speech_data)) { <span class="hljs-comment">//play out total_samples worth of audio data</span>
+    <span class="hljs-comment">// ... Check for play/pause</span>
+    <span class="hljs-keyword">value</span> = speech_data[sample_num];  <span class="hljs-comment">//get the current value from samples</span>
+    dacWrite(<span class="hljs-number">25</span>, <span class="hljs-keyword">value</span>); <span class="hljs-comment">// Write to speaker</span>
+    sample_num += <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span> (micros() - time_since_sample &lt;= time_between_samples); <span class="hljs-comment">//wait...</span>
+    time_since_sample = micros();
+  }
+</code></pre><p><span>produces degraded audio whereas saving the </span><code>strlen(speech_data)</code><span> and reusing it in the loop preserves back the quality.</span></p><h2 id="Design-decisions" data-id="Design-decisions"><a class="anchor hidden-xs" href="#Design-decisions" title="Design-decisions"><span class="octicon octicon-link"></span></a><span>Design decisions</span></h2><h3 id="User-interface" data-id="User-interface"><a class="anchor hidden-xs" href="#User-interface" title="User-interface"><span class="octicon octicon-link"></span></a><span>User interface</span></h3><p><span>The main way that a user interacts with Story Time is through a series of button presses on the project board. At each point, the LCD screen displays the options available to the user and which button presses would trigger each of them. Generally, long button presses are used for recording and retrieving stories while short button presses are used for browsing stories - either flipping through them or hunting for nearby ones.</span></p><p><span>An important design consideration was whether to add voice commands in addition to the button press interface. We did develop this functionality as one of our milestones, with the primary motivation being convenience to the user. However, our project at the moment doesn’t have the ability to ‘keep listening’ to the user and only be activated by a voice command – this means that a user needs to press a button to signal to the system that a voice command is about to arrive. This made voice commands actually more effort than just a button press, and we made the decision not to incorporate them into our final project.</span></p><p><span>We also decided to have a website, separate from the handheld device, keeping track of a user’s stories and stories near them. We made this choice because it allows the user to see a larger number of stories displayed all at once, including indicated on an embedded map, which would have been much more difficult on the LCD screen. We also decided to allow the user to delete stories, and place this functionality only on the website. This makes it less likely for a user to accidentally delete a story through a misplaced button press. It also gives the user a way to keep track of their own stories and have agency over them.</span></p><h3 id="Scalability" data-id="Scalability"><a class="anchor hidden-xs" href="#Scalability" title="Scalability"><span class="octicon octicon-link"></span></a><span>Scalability</span></h3><p><span>One of our key considerations was making our project usable and modifiable to the world in general, while prioritizing its use on the MIT campus. Currently, for users on the MIT campus, Story Time displays not only the user’s coordinate position and stories at their immediate location, but also which part of campus they’re in and which neighboring parts of campus (including the current one) contain stories. This helps the user ‘hunt for stories’ without completely blindly guessing.</span></p><p><span>That we display the user’s coordinate position and display stories according to a radius outward from the user’s position helps in adapting this to on-campus locations, without limit (other than the earth). The design would be better if we slightly modify how we help users hunt - rather than displaying neighboring locations, for instance, we could show cardinal directions that direct a user to a story. It is still possible to use Google Maps to display neighboring locations off campus, but we think adding cardinal directions can better add to the sense of adventure that is a key part of Story Time.</span></p><h3 id="Database" data-id="Database"><a class="anchor hidden-xs" href="#Database" title="Database"><span class="octicon octicon-link"></span></a><span>Database</span></h3><p><code>audio_table</code></p><table>
+<thead>
+<tr>
+<th><span>Entry Name</span></th>
+<th><span>Type</span></th>
+<th><span>Source</span></th>
+<th><span>Purpose</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>username</span></td>
+<td><span>text</span></td>
+<td><span>The username of the user who posted the story</span></td>
+<td><span>Used in website to identify stories that belong to a user</span></td>
+</tr>
+<tr>
+<td><span>title</span></td>
+<td><span>text</span></td>
+<td><span>The title of the story</span></td>
+<td><span>Displayed to the user and used to retrieve specific stories by title</span></td>
+</tr>
+<tr>
+<td><span>sample_rate</span></td>
+<td><span>real</span></td>
+<td><span>The sample rate at which the audio was recorded</span></td>
+<td><span>Not currently utilized as everything is recorded with sample rate of 8000 but allows for future extensibility of the system, to play back stories with different sample rates</span></td>
+</tr>
+<tr>
+<td><span>encoding</span></td>
+<td><span>text</span></td>
+<td><span>The type (ex:  ) of encoding the audio was recorded in originally</span></td>
+<td><span>Not currently utilized as everything is recorded in ___ but allows for future extensibility</span></td>
+</tr>
+<tr>
+<td><span>lat</span></td>
+<td><span>real</span></td>
+<td><span>The latitude the story was recorded at</span></td>
+<td><span>Used to identify stories near the user’s location</span></td>
+</tr>
+<tr>
+<td><span>lon</span></td>
+<td><span>real</span></td>
+<td><span>The longitude the story was recorded at</span></td>
+<td><span>Used to identify stories near the user’s location, both from the ESP32 and the website</span></td>
+</tr>
+<tr>
+<td><span>time_</span></td>
+<td><span>timestamp</span></td>
+<td><span>The timestamp that the database received the story</span></td>
+<td><span>Used by the website to display recently recorded stories</span></td>
+</tr>
+</tbody>
+</table><p><code>location_table_new</code><span>: Used to retrieve a user’s last location</span></p><table>
+<thead>
+<tr>
+<th><span>Entry Name</span></th>
+<th><span>Type</span></th>
+<th><span>Description</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>user</span></td>
+<td><span>text</span></td>
+<td><span>The username whose location is being noted</span></td>
+</tr>
+<tr>
+<td><span>lat</span></td>
+<td><span>real</span></td>
+<td><span>The latitude of the user, as retrieved from the Google API response</span></td>
+</tr>
+<tr>
+<td><span>lon</span></td>
+<td><span>real</span></td>
+<td><span>The longitude of the user, as retrieved from the Google API response</span></td>
+</tr>
+<tr>
+<td><span>time_</span></td>
+<td><span>timestamp</span></td>
+<td><span>A timestamp to enable retrieving only the most recent location</span></td>
+</tr>
+</tbody>
+</table><h2 id="Python-Files" data-id="Python-Files"><a class="anchor hidden-xs" href="#Python-Files" title="Python-Files"><span class="octicon octicon-link"></span></a><span>Python Files</span></h2><h3 id="audio_handlerpy" data-id="audio_handlerpy"><a class="anchor hidden-xs" href="#audio_handlerpy" title="audio_handlerpy"><span class="octicon octicon-link"></span></a><span>audio_handler.py:</span></h3><p><span>This file handles the two main types of requests: POST requests that post new stories and GET requests that return a story.</span></p><p><span>The POST request contains the following fields: form, encoding, sampleRate, audio, title, username, latitude, and longitude. Each of these fields is inserted into the database as part of a single row, as described in the database section of this report. In addition, while handling the POST request the handler gets the current datetime and inserts it as part of the same row.</span></p><p><span>The GET request contains only a single value, title. The handler then retrieves and returns all of the information about the story with that title from the database. Our system makes the assumption that each title is associated with only a single story. Future development could add in location as a criteria for selecting the story, so that the closest title with a given title is returned.</span></p><h3 id="location_handlerpy" data-id="location_handlerpy"><a class="anchor hidden-xs" href="#location_handlerpy" title="location_handlerpy"><span class="octicon octicon-link"></span></a><span>location_handler.py</span></h3><p><span>This file provides 3 functions : getting titles and durations of stories near the user’s location, getting a story corresponding to a title and posting a user’s location to the database.</span></p><p><span>To get the titles and durations, a GET request with the following query parameters is needed :</span></p><ol>
+<li><code>user</code><span> : the user sending the request.</span></li>
+<li><code>mode</code><span> : “title”</span></li>
+<li><code>lat</code><span> : the latitude of the user;s location in degrees.</span></li>
+<li><code>lon</code><span> : the longitude of the user’s location in degrees</span></li>
+</ol><p><span>Once these parameters are parsed, the database is queried for titles, durations, latitudes and longitudes of all stories. Then, all those stories which are within 0.001 degrees, which is approximately 111 metres of the user are filtered. Then, these are sorted by their distance and the nearest 10 stories are filtered from them (if there are less than 10 stories within 111 metres, all of them are in the filtered result). Finally, these stories are randomly shuffled and the titles and durations are sent back to the client as a JSON object. The json response has the follwing name/value pairs :</span></p><ol>
+<li><span>“titles” : JSON array of titles (each title is a JSON string) of  stories.</span></li>
+<li><span>“durations” : JSON array of durations (each duration is a JSON string) of  stories.</span></li>
+</ol><p><span>The file also modifies location_table_new, adding a user location (in coordinate position) to it every time the user submits a GET or POST request. Although the preferred method of updating the user’s location through location_handler is via POST request, sending both a GET and POST request every time seemed excessive, and so our current model updates the database during the periodic GET request. The main table, </span><code>audio_table_new</code><span>, is not touched by a GET request, and we have ensured that the GET request is only being sent by the ESP32 when a user’s location is being communicated.</span></p><h3 id="storywebpy" data-id="storywebpy"><a class="anchor hidden-xs" href="#storywebpy" title="storywebpy"><span class="octicon octicon-link"></span></a><a href="http://608dev-2.net/sandbox/sc/team22/project/storyweb.py" rel="noopener" target="_blank"><span>storyweb.py</span></a></h3><p><span>This file operates our website interface. The main functionality is in the GET request handler. By default, no user is logged in to the website, so performing a GET request without a username prompts the user to enter their username into a form which then sends a username-containing GET request to the same script.</span></p><p><span>If a GET request containing a username is received, the user is considered to be logged in. The request handler carries out a series of operations to create and display the following pieces of HTML code:</span></p><ul>
+<li><span>A table of the up to ten 10 either most recent stories in the </span><code>audio_table_new</code><span> table, or of the 10 closest stories to the user’s last seen location from the </span><code>location_table_new</code><span> table (if available). The story title and location (coordinate position) is displayed.</span></li>
+<li><span>An embedded Google Maps display with these ten stories placed as markers. The map is centered on the user’s last seen location if it is available and on the MIT campus if it is not.</span></li>
+<li><span>A table of all the user’s created stories, their locations, and a ‘Delete Permanently’ button for each.</span></li>
+<li><span>An option to log out.</span></li>
+</ul><p><span>The ‘Delete Permanently’ button sends a POST request to the same script, which contains the title of the story to be deleted. Upon receiving such a POST request, </span><a href="http://storyweb.py" target="_blank" rel="noopener"><span>storyweb.py</span></a><span> removes the story from the database. A POST request was chosen over a DELETE request for ease of integration into the website HTML.</span></p><h3 id="bounding_box_campuspy" data-id="bounding_box_campuspy"><a class="anchor hidden-xs" href="#bounding_box_campuspy" title="bounding_box_campuspy"><span class="octicon octicon-link"></span></a><span>bounding_box_campus.py</span></h3><p><span>This file contains functions designed in lab 3 for figuring out areas from latitude, longitude using bounding boxes. It also contains a dictionary with several corner coordinates for bounding boxes for each undergraduate dorm and a few more locations where undergraduates can generally be found, calculated from Google Maps.</span></p><p><span>The request_handler here handles GET requests where latitudes and longitudes are served into the function and, depending on whether the request asks to navigate or find nearby locations, the function returns the current area of the user or nearby locations where stories exist.</span></p><h2 id="Arduino-Code" data-id="Arduino-Code"><a class="anchor hidden-xs" href="#Arduino-Code" title="Arduino-Code"><span class="octicon octicon-link"></span></a><span>Arduino Code</span></h2><h3 id="Regularly-getting-titles-at-new-location" data-id="Regularly-getting-titles-at-new-location"><a class="anchor hidden-xs" href="#Regularly-getting-titles-at-new-location" title="Regularly-getting-titles-at-new-location"><span class="octicon octicon-link"></span></a><span>Regularly getting titles at new location</span></h3><p><span>To enable the user experience of stumbling across stories as they walk around, we regularly get the user’s location and any nearby titles. To do this, we use two functions, both of which are in the play_story_functions file.</span></p><p><span>The first function is get_location. This uses WiFi-localization and the Google’ Geolocation API, as described in Lab 3, to get the user’s current latitude and longitude. This function is called in the loop function every POLLING_PERIOD number of seconds, where POLLING_PERIOD is a set constant. It is called within the next function, get_titles.</span></p><p><span>The second function is get_titles. get_titles uses the latitude and longitude from get_location to get all nearby titles, where nearby is defined as within 111 metres. To get the nearby titles, a GET request is made to location_handler.py, sending the latitude and longitude. After parsing the returned titles, get_titles updates the array of titles that is used to display nearby titles to the user. Any time get_titles is called, a boolean is turned to true so that the UI knows to reprint the screen.</span></p><h3 id="Playing-back-a-story" data-id="Playing-back-a-story"><a class="anchor hidden-xs" href="#Playing-back-a-story" title="Playing-back-a-story"><span class="octicon octicon-link"></span></a><span>Playing back a story</span></h3><p><span>Playing back a story requires three steps. First the user selects a title and the ESP32 gets that story from the database. Then the ESP32 must parse the response. Finally, the parsed audio string is played back through the speaker. All of the functions to perform this are stored in the file play_story_functions.</span></p><p><em><span>Get_story</span></em><span> is the function that takes the currently selected title and gets the corresponding story from the database. To do this, it makes a GET request to audio_handler.py with the currently selected title. This returns the audio string of the story, along with a variety of other story metadata.</span></p><p><em><span>Parse_response</span></em><span> is the function that parses the response from get_story. The response is sent as a comma separated string encompassed by parentheses, and this function moves pointers and uses str_tok to parse the string. Notably, both the response and the speech_data (the variable the parsed audio string is stored in) are allocated significant memory in psram, as the standard storage on the ESP32 is not large enough. The final step of parse_response is base64 decoding the audio_string, to reverse the encoding done when it is sent to the database.</span></p><p><em><span>Play_audio</span></em><span> takes the speech_data from parse_response and actually plays it through the speakers. It iterates through the speech_data and writes each value to the speaker.</span></p><p><span>In addition to these functions, the ability to pause, replay, and continue playing audio.</span></p><h3 id="Recording-title-and-story" data-id="Recording-title-and-story"><a class="anchor hidden-xs" href="#Recording-title-and-story" title="Recording-title-and-story"><span class="octicon octicon-link"></span></a><span>Recording title and story</span></h3><p><span>Fully recording a story to send to the database involves both recording a title of the story and the story itself. The title is converted to text, with the original audio not saved. In total, there are four functions that enable this process.</span></p><p><em><span>Record_title_audio</span></em><span> allows the user to record a short audio clip that is the title of the story. The audio immediately begins being recorded when this function is called, and the user presses button A to finish recording the title.</span></p><p><em><span>Get_title_text</span></em><span> takes the audio string from record_title_audio and converts it into text. It does this by making a call to the Google Speech API. The returned text is stored in the title variable, to be sent to the database. We convert the title to text so that the ESP32 can display the titles of different stories for a user to choose from, as opposed to the audio version being stored which must be played back via the speaker.</span></p><p><em><span>record_story_audio</span></em><span> allows the user to record a story that is up to 140 seconds long. Once again, the user presses button A to finish recording the story. This function allows for recordings that are significantly longer than those that record_title_audio can record, so that users can fully tell their stories. It does this by taking advantage of psram. It is in this function that the story audio is base64 encoded. This base64 encoding is used to store the audio as a string, and will be decoded by parse_response.</span></p><p><span>In addition to encoding the audio string, record_story_audio creates the properly formatted data to be sent to the database. It adds a prefix, and postfix to the audio data. The prefix includes the metadata of the story, including the encoding, sampleRate, username of the user. It additionally includes the latitude and longitude of the story, which are the last latitude / longitude that get_location retrieved. Get_location is not called in this method, as the function is called regularly enough that using the last stored value is sufficient and makes record_story_audio more efficient.</span></p><p><em><span>Post_audio</span></em><span> is the final step of the recording pipeline. This function makes a POST request to audio_handler.py with the results from record_story_audio. It is a simple function, just building the properly formatted POST request. When audio_handler.py receives the POST request, the story will then be stored in the database.</span></p><h2 id="Thanks" data-id="Thanks"><a class="anchor hidden-xs" href="#Thanks" title="Thanks"><span class="octicon octicon-link"></span></a><span>Thanks</span></h2><p><span>Team-22 would like to thank Prof. Steinmeyer as well as our mentoring team Prof. Mueller, Leon, and Amadou for guidance throughout the project.</span></p><h2 id="Milestone-Demonstrations" data-id="Milestone-Demonstrations"><a class="anchor hidden-xs" href="#Milestone-Demonstrations" title="Milestone-Demonstrations"><span class="octicon octicon-link"></span></a><span>Milestone Demonstrations</span></h2><h3 id="Locations-and-story-retrieval" data-id="Locations-and-story-retrieval"><a class="anchor hidden-xs" href="#Locations-and-story-retrieval" title="Locations-and-story-retrieval"><span class="octicon octicon-link"></span></a><span>Locations and story retrieval</span></h3><ul>
+<li><span>Milestone Number - Description - Video Link</span></li>
+<li><a href="https://drive.google.com/file/d/1PB7EzqXTGSd5UEeJ5Rpu1bLqCPG0Ciz8/preview" target="_blank" rel="noopener"><span>Milestone 2.3</span></a><span> Implement retrieving a random story + relevant information from the database, displaying the title, allowing the user to choose whether to play that story or choose a new one, and then playing the story, while still using buttons as sole interface.</span></li>
+<li><a href="https://youtu.be/oPIhRG5KMp0" target="_blank" rel="noopener"><span>Milestone 2.6</span></a><span> Implement automatically checking the user’s location, and checking if the user is within a certain radius of any stories. If yes, display all stories they are in the radius of.</span></li>
+<li><a href="https://youtu.be/MNHzeQU3yIo" target="_blank" rel="noopener"><span>Milestone 3.1</span></a><span> Retrieves the location every 30 secs. Get nearby stories. Display a random story in the vicintiy. User has option to either play this one or choose another random one. Also, Split the GET request for title / story into two GET requests, so that getting titles takes less time.</span></li>
+<li><a href="https://youtu.be/CvEMoGtats8" target="_blank" rel="noopener"><span>Milestone 3.6</span></a><span> Implement mapping location to the label on MIT campus, and return the location both as coordinates and as the label.</span></li>
+</ul><h3 id="Audio-playback-and-storage" data-id="Audio-playback-and-storage"><a class="anchor hidden-xs" href="#Audio-playback-and-storage" title="Audio-playback-and-storage"><span class="octicon octicon-link"></span></a><span>Audio playback and storage</span></h3><ul>
+<li><a href="https://drive.google.com/file/d/1gm7CG_zGYwu-nfenZyqXVzzAZS558L0L/preview" target="_blank" rel="noopener"><span>Milestone 1.4</span></a><span> Wire the speaker and amplifier into the breadboard, and implement playing back audio.</span></li>
+<li><a href="https://youtu.be/hVYUAJUMsIc" target="_blank" rel="noopener"><span>Milestone 2.1</span></a><span> Implement recording a story in PSRAM and playing back the audio stored using a common encoding at the input and actuator ends.</span></li>
+<li><a href="https://youtu.be/qleuBLzinRg" target="_blank" rel="noopener"><span>Milestone 3.3</span></a><span> Improve the audio quality of the playing back a story from the database</span></li>
+<li><a href="https://youtu.be/GLt16_c9m4s" target="_blank" rel="noopener"><span>Milestone 3.5</span></a><span> Implement Play, Pause Replay, by modifying the UI code from Week 2 and keeping track of array indices.</span></li>
+<li><a href="https://youtu.be/cRcsQ9Wb7Z4" target="_blank" rel="noopener"><span>Milestone 4.1</span></a><span> Make the recording/encoding code more efficient, resuse and free the allocated memory, Evaluate the space/power usage.</span></li>
+<li><a href="https://youtu.be/imnU0mwjgn4" target="_blank" rel="noopener"><span>Milestone 4.5</span></a><span> Attend OH, Store number of samples, retreive it from DB, use it in play_audio() Display time in UI.</span></li>
+</ul><h3 id="Story-recording" data-id="Story-recording"><a class="anchor hidden-xs" href="#Story-recording" title="Story-recording"><span class="octicon octicon-link"></span></a><span>Story recording</span></h3><ul>
+<li><a href="https://drive.google.com/file/d/1Mdg0m-s4LpR7IWwgUxEzGS6-fPQP4Nhr/view" target="_blank" rel="noopener"><span>Milestone 1.1</span></a><span> Design the database structure that will be used to store stories, and handle POST requests to store audio files in the database and GET requests to retrieve the audio file from the database.</span></li>
+<li><a href="https://youtu.be/VIJ6CVxTQAg" target="_blank" rel="noopener"><span>Milestone 1.2</span></a><span> Wire the extra SD storage to the breadboard. Figure out + implement recording audio that is &gt; 5 seconds long, and identify what the maximum length of audio that can be recorded is.</span></li>
+<li><a href="https://youtu.be/QOppGJlh0f0" target="_blank" rel="noopener"><span>Milestone 1.5</span></a><span> Figure out + implement sending large quantities of audio from the ESP32 to the server. Implement sending POST and GET requests from the ESP32 to the server.</span></li>
+<li><a href="https://youtu.be/qsbo6XtL7r8" target="_blank" rel="noopener"><span>Milestone 2.2</span></a><span> Using the demos from week 1, implement the full audio pipeline of recording a short title, parsing the title into words, recording the full story, and sending this information + timestamp and username (hardcoded into ESP32) to the database, still using buttons as interface</span></li>
+<li><a href="https://youtu.be/5OJ_u-oPCp4" target="_blank" rel="noopener"><span>Milestone 2.4</span></a><span> Implement processing voice commands to record a story, request a random story, request a different story (when shown title), without connecting to actually playing audio.</span></li>
+</ul><h3 id="User-interface1" data-id="User-interface"><a class="anchor hidden-xs" href="#User-interface1" title="User-interface1"><span class="octicon octicon-link"></span></a><span>User interface</span></h3><ul>
+<li><a href="https://youtu.be/iYVVRtPaBGU" target="_blank" rel="noopener"><span>Milestone 1.3</span></a><span> Design what the full UI will be (including voice controls) and implement the basic UI using buttons to record a title, record a story, and play back a story, without actually recording/playing</span></li>
+<li><a href="https://drive.google.com/file/d/1klWmekKsU9Yp9x9Ak6N-54AO-TIHuwcv/preview" target="_blank" rel="noopener"><span>Milestone 2.5</span></a><span> Implement a web page that allows the user to type in a username, then displays every location + title from the database, along with a separate section that displays all the locations + titles stored under that username.</span></li>
+<li><a href="https://youtu.be/CTJQtavwmFE" target="_blank" rel="noopener"><span>Milestone 3.4</span></a><span> Add the options to delete stories to the web interface. Implement a map of locations.</span></li>
+<li><a href="https://youtu.be/4ZNabnbVdhI" target="_blank" rel="noopener"><span>Milestone 4.8</span></a><span> Make UI more understandable, clearly display number of stories available.</span></li>
+</ul><h3 id="Integration-and-Presentation" data-id="Integration-and-Presentation"><a class="anchor hidden-xs" href="#Integration-and-Presentation" title="Integration-and-Presentation"><span class="octicon octicon-link"></span></a><span>Integration and Presentation</span></h3><ul>
+<li><a href="https://youtu.be/CM6KLsSqkeg" target="_blank" rel="noopener"><span>Milestone 3.2</span></a><span> Connect together the work from prior weeks, integrating together the full pipeline of location sensing, recording a story + playing back a story, while using voice controls or buttons</span></li>
+<li><span>Milestone 4.2 </span><a href="https://youtu.be/X7EdrhQFCZ4" target="_blank" rel="noopener"><span>Video 1</span></a><span>, </span><a href="https://youtu.be/seJuyrrem-g" target="_blank" rel="noopener"><span>Video 2</span></a><span>, </span><a href="https://youtu.be/MpG2DHPtZXA" target="_blank" rel="noopener"><span>Video 3</span></a><span>, </span><a href="https://youtu.be/TC4pp22PGYY" target="_blank" rel="noopener"><span>Video 4</span></a><span> Final Video. </span><em><span>Also embedded in this document.</span></em></li>
+<li><a href="https://photos.app.goo.gl/CjmZyJCYvg24qLKT7" target="_blank" rel="noopener"><span>Milestone 4.3</span></a><span> Add stories at locations around campus.</span></li>
+<li><a href="https://drive.google.com/file/d/1rpSeWhaVG-T0rnIW9Y_vs4N6MBRdXqC0/preview" target="_blank" rel="noopener"><span>Milestone 4.4</span></a><span> Modularise and refactor code; Integrate old and new FSMs: Voice commands, Play/Replay, Discard Story, Campus locations.</span></li>
+<li><a href="https://drive.google.com/file/d/1U1JQf_L62rXPRSUKHiFHN15DwNH6w1Ho/view?usp=sharing" target="_blank" rel="noopener"><span>Milestone 4.9</span></a><span> Refactor and comment full pipeline.</span></li>
+<li><span>Milestones 4.6: Work on the write-up for the final paper, 4.7: System block diagram, FSM for the final paper. </span><em><span>No video, work seen in this document.</span></em></li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Story-Time" title="Story Time">Story Time</a><ul class="nav">
+<li><a href="#Overview" title="Overview">Overview</a></li>
+<li><a href="#Video-demo" title="Video demo">Video demo</a></li>
+<li><a href="#System-block-diagram" title="System block diagram">System block diagram</a></li>
+<li><a href="#State-Diagram" title="State Diagram">State Diagram</a></li>
+<li><a href="#Basic-functionality" title="Basic functionality">Basic functionality</a><ul class="nav">
+<li><a href="#Locating-stories" title="Locating stories">Locating stories</a></li>
+<li><a href="#Playing-back-stories" title="Playing back stories">Playing back stories</a></li>
+<li><a href="#Recording-stories" title="Recording stories">Recording stories</a></li>
+</ul>
+</li>
+<li><a href="#Design-challenges" title="Design challenges">Design challenges</a><ul class="nav">
+<li><a href="#Storing-large-quantities-of-audio" title="Storing large quantities of audio">Storing large quantities of audio</a></li>
+<li><a href="#Retrieving-and-sending-large-stories" title="Retrieving and sending large stories">Retrieving and sending large stories</a></li>
+<li><a href="#Playing-back-audio" title="Playing back audio">Playing back audio</a></li>
+</ul>
+</li>
+<li><a href="#Design-decisions" title="Design decisions">Design decisions</a><ul class="nav">
+<li><a href="#User-interface" title="User interface">User interface</a></li>
+<li><a href="#Scalability" title="Scalability">Scalability</a></li>
+<li><a href="#Database" title="Database">Database</a></li>
+</ul>
+</li>
+<li><a href="#Python-Files" title="Python Files">Python Files</a><ul class="nav">
+<li><a href="#audio_handlerpy" title="audio_handler.py:">audio_handler.py:</a></li>
+<li><a href="#location_handlerpy" title="location_handler.py">location_handler.py</a></li>
+<li><a href="#storywebpy" title="storyweb.py">storyweb.py</a></li>
+<li><a href="#bounding_box_campuspy" title="bounding_box_campus.py">bounding_box_campus.py</a></li>
+</ul>
+</li>
+<li><a href="#Arduino-Code" title="Arduino Code">Arduino Code</a><ul class="nav">
+<li><a href="#Regularly-getting-titles-at-new-location" title="Regularly getting titles at new location">Regularly getting titles at new location</a></li>
+<li><a href="#Playing-back-a-story" title="Playing back a story">Playing back a story</a></li>
+<li><a href="#Recording-title-and-story" title="Recording title and story">Recording title and story</a></li>
+</ul>
+</li>
+<li><a href="#Thanks" title="Thanks">Thanks</a></li>
+<li><a href="#Milestone-Demonstrations" title="Milestone Demonstrations">Milestone Demonstrations</a><ul class="nav">
+<li><a href="#Locations-and-story-retrieval" title="Locations and story retrieval">Locations and story retrieval</a></li>
+<li><a href="#Audio-playback-and-storage" title="Audio playback and storage">Audio playback and storage</a></li>
+<li><a href="#Story-recording" title="Story recording">Story recording</a></li>
+<li><a href="#User-interface1" title="User interface">User interface</a></li>
+<li><a href="#Integration-and-Presentation" title="Integration and Presentation">Integration and Presentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Story-Time" title="Story Time">Story Time</a><ul class="nav">
+<li><a href="#Overview" title="Overview">Overview</a></li>
+<li><a href="#Video-demo" title="Video demo">Video demo</a></li>
+<li><a href="#System-block-diagram" title="System block diagram">System block diagram</a></li>
+<li><a href="#State-Diagram" title="State Diagram">State Diagram</a></li>
+<li><a href="#Basic-functionality" title="Basic functionality">Basic functionality</a><ul class="nav">
+<li><a href="#Locating-stories" title="Locating stories">Locating stories</a></li>
+<li><a href="#Playing-back-stories" title="Playing back stories">Playing back stories</a></li>
+<li><a href="#Recording-stories" title="Recording stories">Recording stories</a></li>
+</ul>
+</li>
+<li><a href="#Design-challenges" title="Design challenges">Design challenges</a><ul class="nav">
+<li><a href="#Storing-large-quantities-of-audio" title="Storing large quantities of audio">Storing large quantities of audio</a></li>
+<li><a href="#Retrieving-and-sending-large-stories" title="Retrieving and sending large stories">Retrieving and sending large stories</a></li>
+<li><a href="#Playing-back-audio" title="Playing back audio">Playing back audio</a></li>
+</ul>
+</li>
+<li><a href="#Design-decisions" title="Design decisions">Design decisions</a><ul class="nav">
+<li><a href="#User-interface" title="User interface">User interface</a></li>
+<li><a href="#Scalability" title="Scalability">Scalability</a></li>
+<li><a href="#Database" title="Database">Database</a></li>
+</ul>
+</li>
+<li><a href="#Python-Files" title="Python Files">Python Files</a><ul class="nav">
+<li><a href="#audio_handlerpy" title="audio_handler.py:">audio_handler.py:</a></li>
+<li><a href="#location_handlerpy" title="location_handler.py">location_handler.py</a></li>
+<li><a href="#storywebpy" title="storyweb.py">storyweb.py</a></li>
+<li><a href="#bounding_box_campuspy" title="bounding_box_campus.py">bounding_box_campus.py</a></li>
+</ul>
+</li>
+<li><a href="#Arduino-Code" title="Arduino Code">Arduino Code</a><ul class="nav">
+<li><a href="#Regularly-getting-titles-at-new-location" title="Regularly getting titles at new location">Regularly getting titles at new location</a></li>
+<li><a href="#Playing-back-a-story" title="Playing back a story">Playing back a story</a></li>
+<li><a href="#Recording-title-and-story" title="Recording title and story">Recording title and story</a></li>
+</ul>
+</li>
+<li><a href="#Thanks" title="Thanks">Thanks</a></li>
+<li><a href="#Milestone-Demonstrations" title="Milestone Demonstrations">Milestone Demonstrations</a><ul class="nav">
+<li><a href="#Locations-and-story-retrieval" title="Locations and story retrieval">Locations and story retrieval</a></li>
+<li><a href="#Audio-playback-and-storage" title="Audio playback and storage">Audio playback and storage</a></li>
+<li><a href="#Story-recording" title="Story recording">Story recording</a></li>
+<li><a href="#User-interface1" title="User interface">User interface</a></li>
+<li><a href="#Integration-and-Presentation" title="Integration and Presentation">Integration and Presentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(0, 0, 0);
+}       
+
+a:link{
+    text-decoration: none;
+}
+
+a{
+    color: #FD0000;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul.footer_ul1{
+    color: white;
+}
+li{
+    gap: 50px;
+}
+
+.sponsor_link{
+    color: #FD0000;
+}
+
+.sponsor_link:hover{
+        margin-top: 0px;
+        margin-bottom: 50px;
+        font-family: sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: -4px 4px #ef3550,
+                     -8px 8px #f48fb1,
+                     -12px 12px #7e57c2,
+                     -16px 16px #2196f3,
+                     -20px 20px #26c6da,
+                     -24px 24px #43a047,
+                     -28px 28px #eeff41,
+                     -32px 32px #f9a825,
+                     -36px 36px #ff5722;
+      
+
+}
+
+#sponsor_list{
+    cursor: pointer;
+    width: 100px;
+}
+
+
+#about{
+    color: #FD0000;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 100px;
+
+}
+
+#fgmain_style{
+    color: #FD0000;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 200px;
+    padding-left: 100px;
+
+}
+
